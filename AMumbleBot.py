@@ -149,7 +149,7 @@ class MumbleBot(object):
             if not blacklisted:
                 if "youtube.com" in text.lower() or "youtu.be" in text.lower():
                     pass
-                elif text.lower() == self.playcmd.lower():
+                elif text.lower() == "!" + self.playcmd.lower():
                     pass
                 else:
                     for x in self.filetypes:
